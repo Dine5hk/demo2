@@ -29,8 +29,8 @@ class _DemoState extends State<Demo> {
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Demo'),
-              accountEmail: Text('demo@gmail.com'),
+              accountName: Text('Luffy'),
+              accountEmail: Text('luffy@gmail.com'),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage('image/1.jpg'),
               ),
