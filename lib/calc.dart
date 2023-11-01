@@ -11,7 +11,6 @@ class InitialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Calc(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }

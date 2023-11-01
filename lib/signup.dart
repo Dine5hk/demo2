@@ -46,7 +46,7 @@ class _signupState extends State<signup> {
         ),
         ),
 
-         SizedBox(height: 40,
+         SizedBox(height: 15.0,
         ),
         TextField(
           keyboardType: TextInputType.number,
@@ -56,7 +56,7 @@ class _signupState extends State<signup> {
           ),
         ),
 
-SizedBox(height: 40,
+SizedBox(height: 15.0,
         ),
         TextField(
           keyboardType: TextInputType.emailAddress,
@@ -68,7 +68,7 @@ SizedBox(height: 40,
 
 
       SizedBox(
-        height: 25.0,
+        height: 15.0,
       ),
         TextField(
           obscureText: true,
@@ -80,7 +80,7 @@ SizedBox(height: 40,
 
 
       SizedBox(
-        height: 25.0,
+        height: 15.0,
       ),
         TextField(
           obscureText: true,
@@ -91,7 +91,7 @@ SizedBox(height: 40,
         ),
 
         SizedBox(
-          height: 25.0,
+          height: 15.0,
         ),
 
   

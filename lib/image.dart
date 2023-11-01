@@ -14,7 +14,6 @@ class InitialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: img(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -41,8 +40,6 @@ class _imgState extends State<img> {
       ),
 
       
-
-    
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
