@@ -23,10 +23,11 @@ class _MessageState extends State<Message> {
           fontSize: 28.0,
         fontWeight: FontWeight.bold)
         ),
-        Text("Create the Account", style: TextStyle(
+        Text("Create Account", style: TextStyle(
           color: Colors.grey[700], fontSize: 24.0, fontWeight:FontWeight.bold
         ),
         ),
+        
       ],
       ),
     );
