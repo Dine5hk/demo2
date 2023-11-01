@@ -40,13 +40,13 @@ class ChatList extends StatefulWidget {
 class _ChatListState extends State<ChatList> {
   List<Chat> chats = [
     Chat(
-      title: 'Luffy',
+      title: 'Luffy👑',
       message: 'Pirate King',
       time: '10:00 AM',
       imageAssetPath: 'image/1.jpg',
     ),
     Chat(
-      title: 'Hinata',
+      title: 'Hinata🤩',
       message: 'Baaka',
       time: '10:30 AM',
       imageAssetPath: 'image/2.jpg',
