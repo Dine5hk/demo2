@@ -15,6 +15,20 @@ class _MessageState extends State<Message> {
       appBar: AppBar(
         title: Text('Home'),
       ),
+       body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text("SignUp", style: TextStyle(color: Colors.blue[500],
+          fontSize: 28.0,
+        fontWeight: FontWeight.bold)
+        ),
+        Text("Create the Account", style: TextStyle(
+          color: Colors.grey[700], fontSize: 24.0, fontWeight:FontWeight.bold
+        ),
+        ),
+      ],
+      ),
     );
   }
 }
