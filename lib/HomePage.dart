@@ -24,7 +24,6 @@ class _DemoState extends State<Demo> {
         ],
       ),
       body: Container(
-
       ),
       drawer: Drawer(
         child: Column(
@@ -113,6 +112,65 @@ class _DemoState extends State<Demo> {
         ),
       ],
       ),
+      ),
+    );
+  }
+}
+
+class tab extends StatefulWidget {
+  const tab({super.key});
+
+  @override
+  State<tab> createState() => _tabState();
+}
+
+class _tabState extends State<tab> {
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: 5,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('WhatsApp'),
+          actions: [
+            IconButton(onPressed: (){}, icon:Icon(Icons.camera)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+          ],
+
+          bottom: TabBar(
+            isScrollable: true,
+            tabs: [
+              Icon(Icons.group),
+              Text('Chats'),
+              Text('Updates'),
+              Text('Calls'),
+              Text('task')
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: [
+            Center(
+              child: Text('Community'),
+            ),
+            Center(
+              child: Container(
+                child: Text('Chat box'),
+                color: Colors.purple,
+              ),
+            ),
+            Center(
+              child: Icon(Icons.music_note),
+            ),
+            Center(
+              child: Text('Hai'),
+            ),
+            Container(
+              child: TextField(),
+            ),
+          ],
+        ),
       ),
     );
   }
