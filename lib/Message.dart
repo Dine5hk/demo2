@@ -53,7 +53,7 @@ class _ChatListState extends State<ChatList> {
     ),
 
     Chat(
-      title: 'Itachi',
+      title: 'Itachi😵',
       message: 'Clan',
       time: '10:30 AM',
       imageAssetPath: 'image/4.jpg',
