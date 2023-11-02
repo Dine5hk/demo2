@@ -18,8 +18,9 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
+
         drawer: Drawer(
           child: Column(
             children: [
@@ -109,14 +110,18 @@ class _DemoState extends State<Demo> {
           ),
         ),
         appBar: AppBar(
+          title: Text('Demo'),
+          actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+        ],
           bottom: TabBar(
-            isScrollable: true,
+  
             tabs: [
               Icon(Icons.group),
               Text('Chats'),
               Text('Updates'),
               Text('Calls'),
-              Text('task')
             ],
           ),
         ),
@@ -137,9 +142,7 @@ class _DemoState extends State<Demo> {
             Center(
               child: Text('Hai'),
             ),
-            Container(
-              child: TextField(),
-            ),
+      
           ],
         ),
       ),
