@@ -51,6 +51,7 @@ class _signupState extends State<signup> {
         TextField(
           keyboardType: TextInputType.number,
           decoration: const InputDecoration(
+            border: OutlineInputBorder(),
             hintText: "Register Number",
             prefixIcon: Icon(Icons.phone)
           ),
@@ -61,6 +62,7 @@ SizedBox(height: 15.0,
         TextField(
           keyboardType: TextInputType.emailAddress,
           decoration: const InputDecoration(
+            border: OutlineInputBorder(),
             hintText: "Enter your mail adress",
             prefixIcon: Icon(Icons.mail)
           ),
@@ -73,6 +75,7 @@ SizedBox(height: 15.0,
         TextField(
           obscureText: true,
           decoration: InputDecoration(
+            border: OutlineInputBorder(),
             hintText: "Password",
             prefixIcon: Icon(Icons.visibility_off)
           ),
@@ -82,9 +85,12 @@ SizedBox(height: 15.0,
       SizedBox(
         height: 15.0,
       ),
+
+      
         TextField(
           obscureText: true,
           decoration: InputDecoration(
+            border: OutlineInputBorder(),
             hintText: "Re-enter your Password",
             prefixIcon: Icon(Icons.visibility_off)
           ),
@@ -94,12 +100,12 @@ SizedBox(height: 15.0,
           height: 15.0,
         ),
 
-  
+
         Container(
           width: double.infinity,
           child: RawMaterialButton(
             fillColor: Colors.blue, elevation: 0.0,
-            padding: EdgeInsets.symmetric(vertical: 20.0),
+            padding: EdgeInsets.symmetric(vertical: 17.0),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100.0),
             ),

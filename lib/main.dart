@@ -67,6 +67,7 @@ class _loginscreenState extends State<loginscreen> {
         TextField(
           keyboardType: TextInputType.number,
           decoration: const InputDecoration(
+            border: OutlineInputBorder(),
             hintText: "Register Number",
             prefixIcon: Icon(Icons.mail)
           ),
@@ -77,6 +78,7 @@ class _loginscreenState extends State<loginscreen> {
         TextField(
           obscureText: true,
           decoration: InputDecoration(
+            border: OutlineInputBorder(),
             hintText: "Password",
             prefixIcon: Icon(Icons.visibility_off)
           ),
@@ -86,6 +88,7 @@ class _loginscreenState extends State<loginscreen> {
         ),
 
         Text("Forget Password?", style: TextStyle(color: Colors.cyan, fontWeight: FontWeight.bold,
+        
         ),
         ),
 
@@ -97,7 +100,7 @@ class _loginscreenState extends State<loginscreen> {
           width: double.infinity,
           child: RawMaterialButton(
             fillColor: Colors.blue, elevation: 0.0,
-            padding: EdgeInsets.symmetric(vertical: 20.0),
+            padding: EdgeInsets.symmetric(vertical: 17.0),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100.0),
             ),
@@ -122,7 +125,7 @@ class _loginscreenState extends State<loginscreen> {
           width: double.infinity,
           child: RawMaterialButton(
             fillColor: Colors.blue, elevation: 0.0,
-            padding: EdgeInsets.symmetric(vertical: 20.0),
+            padding: EdgeInsets.symmetric(vertical: 17.0),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100.0),
             ),
