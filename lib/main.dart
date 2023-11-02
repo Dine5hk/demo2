@@ -69,7 +69,7 @@ class _loginscreenState extends State<loginscreen> {
           decoration: const InputDecoration(
             border: OutlineInputBorder(),
             hintText: "Register Number",
-            prefixIcon: Icon(Icons.mail)
+            prefixIcon: Icon(Icons.phone)
           ),
         ),
       SizedBox(
