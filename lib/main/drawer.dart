@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:demo2/drawer/Message.dart';
 import 'package:demo2/drawer/calc.dart';
 import 'package:demo2/drawer/image.dart';
+import 'package:demo2/drawer/Contact.dart';
 
 class Contact {
   final String name;
@@ -94,7 +95,7 @@ List<Contact> contacts = [
               ),
               ListTile(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Calc()
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => contact()
                   )
                   );
                 },
