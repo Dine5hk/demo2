@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:demo2/drawer/Message.dart';
-import 'package:demo2/drawer/calc.dart';
-import 'package:demo2/drawer/image.dart';
-import 'package:demo2/drawer/Contact.dart';
+import 'package:demo2/Message.dart';
+import 'package:demo2/calc.dart';
+import 'package:demo2/image.dart';
+import 'package:demo2/Contact.dart';
 
 class Contact {
   final String name;

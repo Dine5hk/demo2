@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:demo2/main/drawer.dart';
-import 'package:demo2/main/signup.dart';
+import 'package:demo2/drawer.dart';
+import 'package:demo2/signup.dart';
 
 void main() {
   runApp(const MyApp());
