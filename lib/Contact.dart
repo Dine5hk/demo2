@@ -18,7 +18,7 @@ class contact extends StatelessWidget {
     return MaterialApp(
       home: ContactListScreen(),
       theme: ThemeData(
-        primarySwatch: Colors.blue, // Use Vivo's color scheme
+        primarySwatch: Colors.blue, 
       ),
     );
   }
@@ -32,14 +32,14 @@ class ContactListScreen extends StatefulWidget {
 class _ContactListScreenState extends State<ContactListScreen> {
   List<Contact> contacts = [
     Contact(
-      name: 'John Doe',
+      name: 'Luffy',
       phoneNumber: '123-456-7890',
-      profilePicture: 'assets/john_avatar.png',
+      profilePicture: 'image/1.jpg',
     ),
     Contact(
-      name: 'Jane Smith',
+      name: 'Hinata',
       phoneNumber: '987-654-3210',
-      profilePicture: 'assets/jane_avatar.png',
+      profilePicture: 'image/2.jpg',
     ),
   ];
 
@@ -56,7 +56,7 @@ class _ContactListScreenState extends State<ContactListScreen> {
             elevation: 2, // Add shadow
             margin: EdgeInsets.all(8),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10), // Rounded corners
+              borderRadius: BorderRadius.circular(10), 
             ),
             child: ListTile(
               leading: CircleAvatar(
@@ -67,20 +67,20 @@ class _ContactListScreenState extends State<ContactListScreen> {
                 contacts[index].name,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
-                  fontSize: 18, // Adjust font size
-                  color: Colors.black, // Customize text color
+                  fontSize: 18, 
+                  color: Colors.black, 
                 ),
               ),
               subtitle: Text(
                 contacts[index].phoneNumber,
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.grey, // Customize text color
+                  color: Colors.grey, 
                 ),
               ),
               trailing: Icon(
                 Icons.phone,
-                color: Colors.green, // Customize icon color
+                color: Colors.green, 
               ),
               onTap: () {
                 Navigator.push(
@@ -124,7 +124,7 @@ class ContactViewScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Colors.black, // Customize text color
+                color: Colors.black, 
               ),
             ),
             SizedBox(height: 8),
@@ -132,13 +132,13 @@ class ContactViewScreen extends StatelessWidget {
               contact.phoneNumber,
               style: TextStyle(
                 fontSize: 20,
-                color: Colors.grey, // Customize text color
+                color: Colors.grey, 
               ),
             ),
             SizedBox(height: 24),
             ElevatedButton(
               onPressed: () {
-                // Add your call functionality here
+                
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
