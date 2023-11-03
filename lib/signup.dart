@@ -1,26 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:demo2/main.dart';
 
-void main() {
-  runApp(const some());
-}
-
-class some extends StatefulWidget {
-  const some({super.key});
-
-  @override
-  State<some> createState() => _someState();
-}
-
-class _someState extends State<some> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(body: signup(),
-    );
-  }
-}
-
-
 class signup extends StatefulWidget {
   const signup({super.key});
 
