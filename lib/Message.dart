@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Message());
+  runApp(InitialPage());
 }
 
+class InitialPage extends StatelessWidget {
+  const InitialPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Message(),
+    );
+  }
+} 
 class Message extends StatelessWidget {
   
   @override

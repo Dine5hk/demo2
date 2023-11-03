@@ -4,18 +4,6 @@ import 'package:demo2/calc.dart';
 import 'package:demo2/image.dart';
 import 'package:demo2/Contact.dart';
 
-class Contact {
-  final String name;
-  final String phoneNumber;
-  final String profilePicture;
-
-  Contact({
-    required this.name,
-    required this.phoneNumber,
-    required this.profilePicture,
-  });
-}
-
 class Demo extends StatefulWidget {
   const Demo({super.key});
 
@@ -24,21 +12,6 @@ class Demo extends StatefulWidget {
 }
 
 class _DemoState extends State<Demo> {
-
-List<Contact> contacts = [
-    Contact(
-      name: 'John Doe',
-      phoneNumber: '123-456-7890',
-      profilePicture: 'assets/john_avatar.png',
-    ),
-    Contact(
-      name: 'Jane Smith',
-      phoneNumber: '987-654-3210',
-      profilePicture: 'assets/jane_avatar.png',
-    ),
-  ];
-
-
   
   @override
   Widget build(BuildContext context) {
@@ -164,18 +137,34 @@ List<Contact> contacts = [
         ),
         body: TabBarView(
           children: [
-            Center(
+
+              Center(
               child: Text('Community'),
             ),
-            Center(
-              child: Container(
-                child: Text('Chat box'),
-                color: Colors.purple,
+            
+           
+            GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
               ),
+              itemCount: 12,
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                  color: Colors.blueAccent,
+                  child: InkWell(onTap: (){},
+                  child:Center(                 
+                    child: Text('Item $index'),
+                  ),
+                  ),
+                );
+              },
             ),
+            
             Center(
               child: Icon(Icons.music_note),
             ),
+
+
             Center(
               child: Text('Hai'),
             ),
