@@ -51,7 +51,16 @@ class _loginscreenState extends State<loginscreen> {
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
+
+
       children: [
+        Image.asset(
+          'image/5.jpg', // Replace with your image path
+          width: 380, // Set the width as needed
+          height: 120, // Set the height as needed
+        ),
+
+        
         Text("Demo", style: TextStyle(color: Colors.blue[500],
           fontSize: 28.0,
         fontWeight: FontWeight.bold)
@@ -71,7 +80,7 @@ class _loginscreenState extends State<loginscreen> {
           ),
         ),
       SizedBox(
-        height: 25.0,
+        height: 10.0,
       ),
         TextField(
           obscureText: true,
@@ -82,16 +91,17 @@ class _loginscreenState extends State<loginscreen> {
           ),
         ),
         SizedBox(
-          height: 20.0,
+          height: 1.0,
         ),
 
-        Text("Forget Password?", style: TextStyle(color: Colors.cyan, fontWeight: FontWeight.bold,
-        
+        TextButton(
+          onPressed: () {},
+          child: Text('Forget Password?'),
         ),
-        ),
+
 
         SizedBox(
-          height: 25.0,
+          height: 1.0,
         ),
 
         Container(
@@ -116,7 +126,7 @@ class _loginscreenState extends State<loginscreen> {
         ),
 
         SizedBox(
-          height: 25.0,
+          height: 10.0,
         ),
 
         Container(
