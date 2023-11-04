@@ -19,8 +19,8 @@ class _DemoState extends State<Demo> {
 
     return DefaultTabController(
       length: 4,
+      initialIndex: 1,
       child: Scaffold(
-
         drawer: Drawer(
           child: Column(
             children: [
