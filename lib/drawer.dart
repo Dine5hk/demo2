@@ -3,6 +3,7 @@ import 'package:demo2/Message.dart';
 import 'package:demo2/calc.dart';
 import 'package:demo2/image.dart';
 import 'package:demo2/Contact.dart';
+import 'package:demo2/main.dart';
 
 class Demo extends StatefulWidget {
   const Demo({super.key});
@@ -121,9 +122,25 @@ class _DemoState extends State<Demo> {
         ),
         appBar: AppBar(
           title: Text('Demo'),
-          actions: [
+          actions: <Widget>[
           IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              if (value == 'logout') {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Homepage()
+                )
+                );
+              }
+            },
+            itemBuilder: (BuildContext context) {
+              return <PopupMenuEntry<String>>[
+                PopupMenuItem<String>(
+                  value: 'logout',
+                  child: Text('Logout'),
+                ),
+              ];
+            },
+          ),
         ],
           bottom: TabBar(
   
