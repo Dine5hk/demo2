@@ -97,7 +97,7 @@ class _ContactListScreenState extends State<ContactListScreen> {
           ).then((newContact) {
             if (newContact != null) {
               setState(() {
-                contacts.add(newContact);
+                contacts.insert(0,newContact);
               });
             }
           });
